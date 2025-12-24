@@ -273,6 +273,29 @@ section{
     margin-top: 40px;
 }
 
+  body.dark {
+    background-color: black;
+    color: #2D3949;
+    }
+    body.dark button,
+    body.dark .playBox,
+    body.dark .main  {
+    background-color: #3B4D66;
+    color: #FFFFFF;
+    }
+    body.dark h1,
+    body.dark b,
+    body.dark .quizHeader,
+    body.dark .next p,
+    body.dark .next h1 
+    {
+    color: #FFFFFF;
+    }
+    body.dark .wrBox {
+    background-color: #FFFFFF;
+    color: #000000;
+    }
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .secbox{
     width: 550px;
@@ -424,28 +447,6 @@ section{
     }
     .nextbtn{
         margin-left: 120px;
-    }
-    body.dark {
-    background-color: black;
-    color: #2D3949;
-    }
-    body.dark button,
-    body.dark .playBox,
-    body.dark .main  {
-    background-color: #3B4D66;
-    color: #FFFFFF;
-    }
-    body.dark h1,
-    body.dark b,
-    body.dark .quizHeader,
-    body.dark .next p,
-    body.dark .next h1 
-    {
-    color: #FFFFFF;
-    }
-    body.dark .wrBox {
-    background-color: #FFFFFF;
-    color: #000000;
     }
 }
 
