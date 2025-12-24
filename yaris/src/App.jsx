@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useEffect } from "react";
 import Header from "./Header"
 import Sec from "./Sec"
 import './assets/css/App.css';
@@ -6,16 +7,18 @@ import './assets/css/App.css';
 function App() {
   const [darkMode, setDarkMode] = useState(false)
 
+  useEffect(() => {
+    document.body.classList.toggle("dark", darkMode);
+  }, [darkMode]);
+
   return (
     <>
-    
-    <Header/>
+      <Header darkMode={darkMode} setDarkMode={setDarkMode} />
 
-    <Sec  />
+      <Sec />
     </>
-
-
   )
 }
 
 export default App
+
