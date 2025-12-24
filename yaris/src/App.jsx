@@ -1,13 +1,20 @@
-import { useState } from 'react'
-
+import { useState } from "react";
+import Header from "./Header"
+import Sec from "./Sec"
+import './assets/css/App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [darkMode, setDarkMode] = useState(false)
 
   return (
     <>
     
+    <Header/>
+
+    <Sec  />
     </>
+
+
   )
 }
 
